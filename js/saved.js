@@ -3,7 +3,7 @@ const d = document;
 const lista = d.querySelector('#lista');
 
 for (let item of listado){
-    fetch('http://www.omdbapi.com/?i=' + item + '&apikey=790229c3')
+    fetch('https://www.omdbapi.com/?i=' + item + '&apikey=790229c3')
         .then(response => response.json())
         .then(data => {
             let div = d.createElement('div');

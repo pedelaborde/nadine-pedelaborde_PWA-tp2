@@ -13,7 +13,7 @@ if (localStorage.saved) {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const searchTerm = search.value;
-  getMovies('http://www.omdbapi.com/?s='+searchTerm+'&apikey=790229c3')
+  getMovies('https://www.omdbapi.com/?s='+searchTerm+'&apikey=790229c3')
 })
 
 function getMovies(url) {
